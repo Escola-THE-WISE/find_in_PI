@@ -1,0 +1,326 @@
+@charset "UTF-8";
+/* 12px a 24px */
+/* 8px a 16px */
+/* 4px a 12px */
+/* 12px a 24px */
+/* 8px a 16px */
+/* 4px a 12px */
+/* =========================================================== */
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =========================================================== */
+/* FONTES */
+/* MavenPro - Fonte para textos */
+@font-face {
+  font-family: " ";
+  src: url("../../fonts/MavenPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MavenPro";
+  src: url("../../fonts/MavenPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MavenPro";
+  src: url("../../fonts/MavenPro-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MavenPro";
+  src: url("../../fonts/MavenPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MavenPro";
+  src: url("../../fonts/MavenPro-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MavenPro";
+  src: url("../../fonts/MavenPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+/* =========================================================== */
+/* BASE */
+body {
+  background-color: #461B75;
+  font-family: "MavenPro", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  min-height: 100lvh;
+  overflow-x: hidden;
+  overflow-anchor: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  font-size: clamp(1.69rem, 3vw, 2.25rem);
+  font-weight: 700;
+}
+
+p, a, span {
+  color: #94a1b2;
+  font-size: clamp(0.94rem, 2vw, 1.25rem);
+}
+
+strong {
+  color: #FFBC01;
+}
+
+/* =========================================================== */
+/* MAIN CSS */
+/* Header */
+.l-header {
+  width: 100%;
+}
+
+.l-header--navigation {
+  padding: 1rem clamp(5%, 6vw, 7%);
+  position: absolute;
+  z-index: 5;
+}
+
+/* Navigation */
+.c-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-nav__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.c-nav__title {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: #FFBC01;
+}
+@media (max-width: 480px) {
+  .c-nav__title {
+    display: none;
+  }
+}
+
+.c-nav__logo {
+  width: 4rem;
+}
+
+/* Main */
+.l-main__background {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 2;
+}
+@media (min-width: 1400px) {
+  .l-main__background {
+    align-items: center;
+  }
+}
+
+.l-main__background--hero {
+  background-color: #4F1D85;
+  min-height: 95dvh;
+  border-radius: 0 0 60px 60px;
+}
+@media (max-width: 480px) {
+  .l-main__background--hero {
+    border-radius: 0 0 30px 30px;
+  }
+}
+
+/* Section */
+.l-section {
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem clamp(5%, 6vw, 7%);
+  display: grid;
+  position: relative;
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .l-section {
+    justify-content: center;
+  }
+}
+@media (min-width: 1400px) {
+  .l-section {
+    width: 1400px;
+  }
+}
+
+.l-main__background--hero .l-section {
+  padding-top: 10rem;
+  gap: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .l-main__background--hero .l-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Article */
+.c-article {
+  display: grid;
+  gap: 1rem;
+}
+
+.l-main__background--hero .c-article {
+  gap: 3rem;
+}
+
+.c-article__header {
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+}
+@media (max-width: 320px) {
+  .c-article__header {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.c-article__banner {
+  width: 9rem;
+  height: 9rem;
+}
+@media (max-width: 768px) {
+  .c-article__banner {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+@media (max-width: 480px) {
+  .c-article__banner {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+@media (max-width: 320px) {
+  .c-article__banner {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+.c-article__main {
+  width: 100%;
+}
+
+.l-main__background--hero .c-article--reply {
+  background-color: #461B75;
+  border-radius: 16px;
+  padding: clamp(0.75rem, 2vw, 1.5rem);
+  text-align: center;
+  gap: 1rem;
+  grid-template-rows: auto 1fr;
+}
+.l-main__background--hero .c-article--reply .c-article__title {
+  color: #6C38A5;
+  width: 100%;
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  text-align: center;
+}
+.l-main__background--hero .c-article--reply .c-article__main {
+  min-height: 5rem;
+}
+
+/* Form */
+.c-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.c-form__fieldset {
+  border: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.c-form__label {
+  width: 100%;
+  gap: 0.2rem;
+  font-size: clamp(0.85rem, 1.75vw, 1.125rem);
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+
+.c-form__select {
+  background: #fff;
+  border: 3px solid #fff;
+  border-radius: 4px;
+  padding: clamp(0.8rem, 1.2vw, 1rem) 0.5rem;
+  font-size: clamp(0.75rem, 1.5vw, 1rem);
+  color: black;
+  font-weight: 500;
+  /* Ícone de seta personalizado */
+  appearance: none; /* Remove o estilo padrão do sistema */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 15px;
+}
+
+/* Button */
+.c-button--cta {
+  background-color: #FFBC01;
+  padding: clamp(0.8rem, 1.2vw, 1rem) clamp(1.5rem, 2.5vw, 2rem);
+  color: black;
+  font-size: clamp(0.75rem, 1.5vw, 1rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 8px;
+  box-shadow: 0 5px 0 #CE9800;
+  transition: 0.2s;
+}
+.c-button--cta:hover {
+  box-shadow: 0 4px 0 #CE9800;
+  transform: scale(1.01);
+}
+.c-button--cta:active {
+  box-shadow: 0 0px 0 #CE9800;
+  transform: scale(1.01) translateY(4px);
+}
+
+.c-button-submit {
+  background-color: #fff;
+  color: #4F1D85;
+  width: 100%;
+  padding: clamp(0.8rem, 1.2vw, 1rem) clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 700;
+  border: 0;
+  border-radius: 4px;
+}
+
+/*# sourceMappingURL=style.css.map */

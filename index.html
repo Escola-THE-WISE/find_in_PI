@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encontre em PI</title>
+
+    <!-- LINKS -->
+     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header></header>
+    <header class="l-header l-header--navigation">
+        <nav class="c-nav">
+            <header class="c-nav__header">
+                <img src="assets/imgs/logo/small-yellow-logo.png" alt="" class="c-nav__logo">
+                <h1 class="c-nav__title">THE WISE</h1>
+            </header>
+            <a class="c-button c-button--cta" href="">NOS CONHEÇA</a>
+        </nav>
+    </header>
+    <main class="l-main">
+        <section class="l-main__background l-main__background--hero">
+            <section id="home" class="l-section ">
+                <article class="c-article">
+                    <header class="c-article__header">
+                        <img class="c-article__banner" src="assets/imgs/medium-yellow-pi.png" alt="">
+                        <h1 class="c-article__title">Encontre sua data de nascimento no número <strong>PI</strong></h1>
+                    </header>
+                    <form action="" method="post" class="c-form">
+                        <fieldset class="c-form__fieldset">
+                            <label for="" class="c-form__label">
+                                Dia
+                                <select class="c-form__select c-form__select--day" name="day" id="day">
+                                    <option class="c-form__option" value="" disabled selected hidden>dd</option>
+                                </select>
+                            </label>
+                            <label for="" class="c-form__label c-form__select--month">
+                                Mês
+                                <select class="c-form__select" name="month" id="month">
+                                    <option class="c-form__option" value="" disabled selected hidden>mm</option>
+                                </select>
+                            </label>
+                            <label for="" class="c-form__label c-form__select--year">
+                                Ano
+                                <select class="c-form__select" name="year" id="year">
+                                    <option class="c-form__option" value="" disabled selected hidden>aaaa</option>
+                                </select>
+                            </label>
+                        </fieldset>
+                        <label class="c-form__label" for="">
+                            <input id="submit" class="c-button c-button-submit" onclick="handleSubmit(event)" type="submit" value="PROCURAR DATA">
+                        </label>
+                    </form>
+                </article>
+                <article class="c-article c-article--reply">
+                    <header class="c-article__header">
+                        <h2 class="c-article__title">Sua resposta vai aparecer aqui!</h2>
+                    </header>
+                    <div class="c-article__main" id="reply">
+
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="src/calendar.js"></script>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Impede o envio do formulário
+        }
+    </script>
+    <script src="src/script.js"></script>
 </body>
 </html>

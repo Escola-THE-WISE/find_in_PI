@@ -1,0 +1,35 @@
+@use '../abstracts/_variables' as *;
+@use '../abstracts/_functions' as *;
+@use '../abstracts/_mixins' as *;
+@use '../abstracts/_placeholders' as *;
+@use '../base/_typography' as *;
+
+
+/* =========================================================== */
+/* BASE */
+body{
+    background-color: $secondary-background-color;
+    font-family: 'MavenPro', sans-serif;
+    font-weight: 400;
+
+    width: 100%;
+    min-height: 100lvh;
+
+    overflow-x: hidden;
+    overflow-anchor: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: $title-color;
+    font-size: $large-title-size;
+    font-weight: 700;
+}
+
+p, a, span{
+    color: $text-color;
+    font-size: $default-text-size;
+}
+
+strong{
+    color: $tertiary-color;
+}

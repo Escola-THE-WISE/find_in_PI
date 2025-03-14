@@ -1,0 +1,67 @@
+// ===========================================================
+// COLORS
+
+// Background
+$main-background-color: #4F1D85;
+$secondary-background-color: #461B75;
+
+// Button
+$button-color: #fff;
+$button-text-color: #4F1D85;
+
+// Titles and Paragraph
+$title-color: #fff;
+$text-color: #94a1b2;
+
+// Ilustration
+$main-color: #fff;
+$secondary-color: #4F1D85;
+$tertiary-color: #FFBC01;
+$shadow-color: #CE9800;
+
+$stroke-color: #fff;
+$highlight-color: #6C38A5;
+
+// ===========================================================
+// UTILS
+
+// Border Raidus
+$large-border-radius: 16px; 
+$medium-border-radius: 8px;
+$small-border-radius: 4px;
+
+// Button
+$button-text-size: clamp(0.85rem, 1.75vw, 1.125rem); // 13.6px a 18px
+$button-padding: clamp(0.8rem, 1.2vw, 1rem) clamp(1.5rem, 2.5vw, 2rem);
+
+// Gap
+$medium-gap: clamp(0.5rem, 2vw, 1.5rem);
+
+// Page Padding
+$page-content-padding: clamp(5%, 6vw, 7%);
+
+// Padding
+$large-padding: clamp(0.75rem, 2vw, 1.5rem); /* 12px a 24px */
+$medium-padding: clamp(0.5rem, 1.5vw, 1rem); /* 8px a 16px */
+$small-padding: clamp(0.25rem, 1vw, 0.8rem); /* 4px a 12px */
+
+// Margin
+$large-margin: clamp(0.75rem, 2vw, 1.5rem); /* 12px a 24px */
+$medium-margin: clamp(0.5rem, 1.5vw, 1rem); /* 8px a 16px */
+$small-margin: clamp(0.25rem, 1vw, 1rem); /* 4px a 12px */
+
+// Titles and Paragraph
+$hero-title-size: clamp(2.75rem, 5vw, 3.5rem); // 44px e 56px
+$large-title-size: clamp(1.69rem, 3vw, 2.25rem); // 36px a 48px
+$default-title-size: clamp(1.25rem, 2.5vw, 1.75rem); // 20px a 28px
+$small-title-size: clamp(1rem, 2vw, 1.5rem); // 16px a 24px
+
+$large-text-size: clamp(1.125rem, 2vw, 1.5rem); // 18px a 24px
+$default-text-size: clamp(0.94rem, 2vw, 1.25rem); // 15px a 20px
+$small-text-size: clamp(0.75rem, 1.5vw, 1rem); // 12px a 16px
+
+// ViewPort (Breakpoints)
+$small-viewport: 480px;
+$medium-viewport: 768px;
+$large-viewport: 1400px;
+$full-viewport: 100vw;
