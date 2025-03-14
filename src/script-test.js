@@ -16,13 +16,14 @@ document.getElementById('submit').addEventListener('click', function (event) {
 
     const numberSearch = day + month + year;
 
+    teste
     if(false){
         console.log(`Data Selecionada: ${day}/${month}/${year}`);
         alert(`Data Selecionada: ${day}/${month}/${year} e concatenado fica ${numberSearch}`);
     }
 
     reply.innerHTML = `<p class="c-article__reply">
-    Data Selecionada: <strong> ${day}/${month}/${year} </strong>
+    Data Selecionada: ${day}/${month}/${year}
     </p>`;
 
     fetch('src/data.json')
@@ -34,12 +35,16 @@ document.getElementById('submit').addEventListener('click', function (event) {
             const position = piString.indexOf(numberSearch); 
             
             if (position !== -1) {
+                alert(`A sequência ${numberSearch} foi encontrada no número de Pi na posição ${position + 1}!`);
+            
                 reply.innerHTML += `<p class="c-article__reply">
-                    Achamos 🎉 🎉!!! A primeira vez que o número <strong> ${numberSearch} </strong> aparece é com início na posição decimal <strong> ${position + 1} </strong> do número de Pi.
+                    A sequência ${numberSearch} começa na posição ${position + 1} do número de Pi.
                 </p>`;
             } else {
+                alert(`A sequência ${numberSearch} NÃO foi encontrada no número de Pi.`);
+            
                 reply.innerHTML += `<p class="c-article__reply">
-                    Infelizmente a sequência <strong> ${numberSearch} </strong> não foi encontrada no número de Pi (até 100.000.000).
+                    A sequência ${numberSearch} não foi encontrada no número de Pi.
                 </p>`;
             }
         })

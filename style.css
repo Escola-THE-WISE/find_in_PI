@@ -252,6 +252,15 @@ strong {
   min-height: 5rem;
 }
 
+.c-article__reply {
+  width: 100%;
+  padding-bottom: 1rem;
+  color: #fff;
+  font-size: clamp(0.94rem, 2vw, 1.25rem);
+  font-weight: 600;
+  text-align: center;
+}
+
 /* Form */
 .c-form {
   display: grid;
