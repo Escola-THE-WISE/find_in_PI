@@ -35,11 +35,11 @@ document.getElementById('submit').addEventListener('click', function (event) {
             
             if (position !== -1) {
                 reply.innerHTML += `<p class="c-article__reply">
-                    Achamos 🎉 🎉!!! A primeira vez que o número <strong> ${numberSearch} </strong> aparece é com início na posição decimal <strong> ${position + 1} </strong> do número de Pi.
+                    Achamos 🎉 🎉!!! A primeira vez que o número <strong> ${numberSearch} </strong> aparece é com início na posição decimal <strong> ${position + 1} </strong> do número de PI.
                 </p>`;
             } else {
                 reply.innerHTML += `<p class="c-article__reply">
-                    Infelizmente a sequência <strong> ${numberSearch} </strong> não foi encontrada no número de Pi (até 100.000.000).
+                    Infelizmente a sequência <strong> ${numberSearch} </strong> não foi encontrada no número de PI (até 100.000.000).
                 </p>`;
             }
         })

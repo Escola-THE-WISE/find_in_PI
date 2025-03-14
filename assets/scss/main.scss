@@ -96,6 +96,15 @@
     }
 }
 
+.l--section-center-align{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    margin: 3rem;
+}
+
 .l-main__background--hero .l-section{
     padding-top: 10rem;
     gap: 3rem;
@@ -106,6 +115,10 @@
     @media (max-width: $medium-viewport){
         grid-template-columns: 1fr;
     }
+}
+
+.c-section__title{
+    text-align: center;
 }
 
 /* Article */
@@ -266,4 +279,107 @@
     font-weight: 700;
     border: 0;
     border-radius: $small-border-radius;
+}
+
+/* CARROSSEL */
+
+.c-carousel{
+    max-width: 900px;
+    width: 100%;
+}
+
+.splide__track{
+    padding: 2.5rem;
+}
+
+.splide__slide{
+    display: flex;
+    justify-content: center;
+}
+
+/* CARD */
+
+
+.c-card {
+    background-color: #ffffff;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+
+    display: grid;
+    
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 120px;
+    background-color: #C4C4C4; /* Cinza para o espaço da imagem */
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.image-placeholder{
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4F2A84; /* Cor roxa do título */
+    margin-bottom: 8px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.card-button {
+    background-color: #4F2A84;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+}
+
+.card-button i {
+    font-size: 12px;
+}
+
+.card-button:hover {
+    background-color: #3a1f65;
+}
+
+/* Footer */
+
+.l--footer__copyright{
+    background-color: #00000050;
+    padding: var(--small-padding);
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 1rem;
+}
+
+.l--footer__copyright p{
+    font-size: var(--small-text-size);
+    text-align: center;
+}
+
+.l--footer__copyright span, .l--footer__copyright a{
+    color:#00000050;
+    font-size: 0.8rem;
 }

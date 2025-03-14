@@ -7,6 +7,9 @@
 
     <!-- LINKS -->
      <link rel="stylesheet" href="style.css">
+
+    <!-- CSS Biblioteca SplideJS -->
+    <link rel="stylesheet" href="libraries/splide-4.1.3/css/splide.min.css">
 </head>
 <body>
     <header class="l-header l-header--navigation">
@@ -57,16 +60,125 @@
                         <h2 class="c-article__title">Sua resposta vai aparecer aqui!</h2>
                     </header>
                     <div class="c-article__main" id="reply">
-                        
+
                     </div>
                 </article>
             </section>
         </section>
+
+        <!-- SEÇÃO DE CARDS -->
+        <section class="l-main__background "> 
+            <div  class="l--section l--section-center-align">  
+                <h2 class="c-section__title">Curiosidades Sobre <strong>PI</strong></h2> 
+                <section class="splide c-carousel" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <!-- CARD --> 
+                                <article class="c-card">
+                        
+                                    <h2 class="card-title">π é um número transcendental</h2>
+                                    <p class="card-text">
+                                        Além de irracional, π é transcendental, ou seja, não há equação polinomial de coeficientes racionais que o contenha como raiz.
+                                    </p>
+                                    <button class="card-button">
+                                        SABER MAIS <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </article>
+                            </li>
+                            <li class="splide__slide">
+                                <!-- CARD --> 
+                                <article class="c-card">
+                                    
+                                    <h2 class="card-title">Arquimedes e o primeiro estudo de π</h2>
+                                    <p class="card-text">
+                                        Arquimedes foi o primeiro a estudar cientificamente o valor de π em sua obra "A medida de um círculo".
+                                    </p>
+                                    <button class="card-button">
+                                        SABER MAIS <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </article>
+                                
+                            </li>
+                            <li class="splide__slide">
+                                <!-- CARD --> 
+                                <article class="c-card">
+                                    
+                                    <h2 class="card-title">Prova da Irracionalidade de π</h2>
+                                    <p class="card-text">
+                                        O matemático francês Johann Heinrich Lambert provou em 1761 que o número π é irracional.
+                                    </p>
+                                    <button class="card-button">
+                                        SABER MAIS <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </article>
+                            </li>
+                            <li class="splide__slide">
+                                <!-- CARD -->
+                                <article class="c-card">
+                                    
+                                    <h2 class="card-title">62,8 trilhões de casas decimais</h2>
+                                    <p class="card-text">
+                                        Atualmente, são conhecidas 62,8 trilhões de casas decimais de π, calculadas por matemáticos suíços usando um supercomputador.
+                                    </p>
+                                    <button class="card-button">
+                                        SABER MAIS <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </article>
+                            </li>
+                            <li class="splide__slide">
+                                <!-- CARD -->
+                                <article class="c-card">
+                                    
+                                    <h2 class="card-title">Recorde de memorização de π</h2>
+                                    <p class="card-text">
+                                        O indiano Rajveer Meena recitou 70 mil dígitos de π em 2015, levando quase 10 horas com os olhos vendados.
+                                    </p>
+                                    <button class="card-button">
+                                        SABER MAIS <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </article>
+                            </li>
+                            <li class="splide__slide">
+                                <!-- CARD -->                       
+                                <article class="c-card">
+                                    
+                                    <h2 class="card-title">Sequências numéricas em π</h2>
+                                    <p class="card-text">
+                                        Qualquer sequência finita de números pode ser encontrada em π, incluindo todas as datas de nascimento da humanidade.
+                                    </p>
+                                    <button class="card-button">
+                                        SABER MAIS <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </article>
+                            </li>
+                            <li class="splide__slide">
+                                <!-- CARD -->
+                                <article class="c-card">
+                                    
+                                    <h2 class="card-title">π na ciência</h2>
+                                    <p class="card-text">
+                                        π está presente em diversas áreas como física, engenharia, bioquímica, meteorologia e estatística, desde o DNA até a Teoria da Relatividade.
+                                    </p>
+                                    <button class="card-button">
+                                        SABER MAIS <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </section>
     </main>
-    <footer>
-
+    <footer class="l--footer__copyright">
+        <p><p>Copyright © 2025. The Wise. Todos os direitos reservados. <span> Desenvolvedor: <a target="_blank" href="http://www.gustavocosta.me/">www.gustavocosta.me</a></span></p></p>
     </footer>
+    <!-- JS Biblioteca SplideJS -->
+    <script src="libraries/splide-4.1.3/js/splide.min.js"></script>
 
+    <!-- Outros Scripts  -->
+    <script src="src/carousel.js"></script>
     <script src="src/calendar.js"></script>
     <script>
         function handleSubmit(event) {
